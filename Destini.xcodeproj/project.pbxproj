@@ -12,6 +12,8 @@
 		9031EC861F8477C7004C6680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9031EC841F8477C7004C6680 /* Main.storyboard */; };
 		9031EC881F8477C7004C6680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9031EC871F8477C7004C6680 /* Assets.xcassets */; };
 		9031EC8B1F8477C7004C6680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9031EC891F8477C7004C6680 /* LaunchScreen.storyboard */; };
+		9031EC971F8484ED004C6680 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9031EC961F8484ED004C6680 /* Story.swift */; };
+		9031EC991F848627004C6680 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9031EC981F848627004C6680 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9031EC871F8477C7004C6680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9031EC8A1F8477C7004C6680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9031EC8C1F8477C7004C6680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9031EC961F8484ED004C6680 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		9031EC981F848627004C6680 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		9031EC921F84814A004C6680 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9031EC961F8484ED004C6680 /* Story.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -77,6 +82,7 @@
 		9031EC931F848151004C6680 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9031EC981F848627004C6680 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			files = (
 				9031EC831F8477C7004C6680 /* ViewController.swift in Sources */,
 				9031EC811F8477C7004C6680 /* AppDelegate.swift in Sources */,
+				9031EC971F8484ED004C6680 /* Story.swift in Sources */,
+				9031EC991F848627004C6680 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

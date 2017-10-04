@@ -20,25 +20,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FPS-qy-U3s">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3v-2G-qBF">
-                                <rect key="frame" x="16" y="598" width="382" height="39"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3v-2G-qBF" customClass="RoundedButton" customModule="Destini" customModuleProvider="target">
+                                <rect key="frame" x="16" y="567" width="382" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="Ywb-HW-w37"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ywb-HW-w37"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDo-H1-tXi"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNm-hu-eEx">
-                                <rect key="frame" x="16" y="666" width="382" height="39"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNm-hu-eEx" customClass="RoundedButton" customModule="Destini" customModuleProvider="target">
+                                <rect key="frame" x="16" y="656" width="382" height="60"/>
                                 <color key="backgroundColor" red="0.3921568627" green="0.76470588240000004" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="Bdj-ge-csU"/>
+                                    <constraint firstAttribute="height" constant="60" id="Bdj-ge-csU"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z78-Np-uKn"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lZ-iP-PWR">
                                 <rect key="frame" x="16" y="83" width="382" height="390"/>
@@ -56,11 +62,11 @@
                             <constraint firstItem="FPS-qy-U3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1hr-xS-sh7"/>
                             <constraint firstItem="FPS-qy-U3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5tN-Xl-IyW"/>
                             <constraint firstItem="3lZ-iP-PWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5zM-zI-CpR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LNm-hu-eEx" secondAttribute="bottom" constant="31" id="7ir-6u-drs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LNm-hu-eEx" secondAttribute="bottom" constant="20" id="7ir-6u-drs"/>
                             <constraint firstItem="S3v-2G-qBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fom-FO-X6L"/>
                             <constraint firstItem="FPS-qy-U3s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HCX-47-HaT"/>
                             <constraint firstItem="FPS-qy-U3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N8L-lE-Km1"/>
-                            <constraint firstItem="S3v-2G-qBF" firstAttribute="top" secondItem="3lZ-iP-PWR" secondAttribute="bottom" constant="125" id="S4D-uZ-Fai"/>
+                            <constraint firstItem="S3v-2G-qBF" firstAttribute="top" secondItem="3lZ-iP-PWR" secondAttribute="bottom" constant="94" id="S4D-uZ-Fai"/>
                             <constraint firstItem="FPS-qy-U3s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VBE-dF-quP"/>
                             <constraint firstItem="LNm-hu-eEx" firstAttribute="top" secondItem="S3v-2G-qBF" secondAttribute="bottom" constant="29" id="Wru-eE-X6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S3v-2G-qBF" secondAttribute="trailing" constant="16" id="XRE-vO-lRC"/>
@@ -74,6 +80,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="LNm-hu-eEx" id="9xW-ga-BMY"/>
+                        <outlet property="textView" destination="3lZ-iP-PWR" id="xop-7K-AZ0"/>
+                        <outlet property="topButton" destination="S3v-2G-qBF" id="bbq-HE-bc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
