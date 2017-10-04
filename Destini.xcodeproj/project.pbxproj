@@ -54,14 +54,46 @@
 		9031EC7F1F8477C7004C6680 /* Destini */ = {
 			isa = PBXGroup;
 			children = (
+				9031EC951F84815C004C6680 /* Resources */,
+				9031EC941F848155004C6680 /* Controller */,
+				9031EC931F848151004C6680 /* View */,
+				9031EC921F84814A004C6680 /* Model */,
 				9031EC801F8477C7004C6680 /* AppDelegate.swift */,
-				9031EC821F8477C7004C6680 /* ViewController.swift */,
 				9031EC841F8477C7004C6680 /* Main.storyboard */,
 				9031EC871F8477C7004C6680 /* Assets.xcassets */,
 				9031EC891F8477C7004C6680 /* LaunchScreen.storyboard */,
 				9031EC8C1F8477C7004C6680 /* Info.plist */,
 			);
 			path = Destini;
+			sourceTree = "<group>";
+		};
+		9031EC921F84814A004C6680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9031EC931F848151004C6680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9031EC941F848155004C6680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9031EC821F8477C7004C6680 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9031EC951F84815C004C6680 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
